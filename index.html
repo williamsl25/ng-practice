@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ANGULAR BASICS</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body ng-app="myApp">
+
+    <header>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-home"> Home</i></a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div ng-controller="mainController">
+        <h1>Hello</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div ng-controller="mainController">
+        <h3>What does float do?</h1>
+        <p>
+          float pushes an element to the sides of a page with text wrapped around it. you can create entire page or a smaller area by using float. if size of a floated element changes, text around it will re-flow to accommodate the changes. You can have float left, right, none or inherit.
+
+        <p>
+          if you set, 'float: left;' for an image, it will move to the left until the margin, padding or border of another block-level element is reached. The normal flow will wrap around on the right side.
+        </p>
+        </p>
+        <div class="box"><span>1 float: left;</span></div>
+        <div class="box"><span>2 float: left;</span></div>
+        <div class="box"><span>3 float: left;</span></div>
+        <div class="box"><span>4 float: left;</span></div>
+        <div class="box"><span>5 float: left;</span></div>
+      </div>
+    </div>
+    <div class="container">
+      <div ng-controller="mainController">
+        <h3>How can you clear sides of a floating element?</h1>
+        <p>
+          If you clear a side of an element, floating elements will not be accepted on that side. With 'clear' set to 'left', an element will be moved below any floating element on the left side. clear is used to stop wrap of an element around a floating element.
+        </p>
+        <div class="box"><span>1 float: left;</span></div>
+        <div class="box clearLeft"><span>2 clear left set</span></div>
+        <div class="box"><span>3 float: left;</span></div>
+        <div class="box"><span>4 float: left;</span></div>
+        <div class="box"><span>5 float: left;</span></div>
+      </div>
+    </div>
+    <div class="container container1">
+      <div ng-controller="mainController">
+        <h3>Relative and Absolute positioning</h3>
+        <p>
+          You can use top or bottom, and left or right to move the element relative to where it would normally occur in the document
+        </p>
+        <div class="div1">div1 position: relative
+        <p class="rel-abs">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        </div>
+        <div class="div1a">div1a position: absolute;
+          <p class="rel-abs">
+            When you position absolute the element is removed from the document and placed exactly where you tell it to go
+          </p>
+          </div>
+        <div class="div1b">div1b<
+          <p class="rel-abs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          </div>
+        <div class="div1c">div1c
+          <p class="rel-abs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          </div>
+      </div>
+    </div>
+    <div class="container relAndAbs">
+      <div ng-controller="mainController">
+        <h4>Relative + Absolute</h4>
+        <div class="div-1">div-1
+        <p class="rel-abs">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        </div>
+        <div class="div-1a">div-1a
+          <p class="rel-abs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          </div>
+        <div class="div-1b">div-1b<
+          <p class="rel-abs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          </div>
+        <div class="div-1c">div-1c
+          <p class="rel-abs">
+           position absolute while container lorem is position relatve
+          </p>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div ng-controller="mainController">
+        <h3>What are the differences between inline, block and inline-block?</h3>
+        <p>
+          <em>inline</em>, elements do not break the flow. think of <span class="inline">span</span> it fits in the line. Important points about inline elements, margin/ padding will push other elements horizontally not vertically. Moreover, inline elements ignore height and width.
+        </p>
+        <p>
+          <em>block</em>, breaks the flow and doesn't sit inline. they are usually containers like div, section, ul and also text p, h1, etc.
+        </p>
+        <p>
+          <em>inline-block</em>, will be similar to inline and will go with the flow of the page. Only differences is this this will take height and width.
+        </p>
+        <p>
+          <em>relative and absolute</em>, If you set relative positioning on div1b, any elements within div1b will be positioned relative to div1b.  Then, if you set absolute positioning on div1c, you can move it to the top right of div1b
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- libraries -->
+    </script> <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+    <script src="bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>

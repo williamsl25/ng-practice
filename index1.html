@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ANGULAR BASICS</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body ng-app>
+    Name: <input ng-model="username"></input> {{username}}
+    <br>
+    {{"hello " + username | uppercase}}
+    <br>
+      {{"hello " + username | lowercase}}
+    <br>
+    {{ + username | currency}}
+    <br>
+    <hr>
+    <button ng-click="count = count + 1" ng-init="count=0" ng-hide="count>5"type="button" name="button">Add Friend</button>
+
+    <button ng-click="count= count-1" type="button" name="button">remove friend</button>
+    <br>
+    count: {{count}}
+    <hr>
+    <ul ng-init="friends=[
+      {name: 'Ryan', favlib: 'angular'},
+      {name: 'Jeremy', favlib: 'backbone'},
+      {name: 'Steve', favlib: 'react'}
+    ]">
+      <li ng-repeat="friend in friends">{{friend.name}} loves {{friend.favlib}}</li>
+    </ul>
+    <hr>
+
+
+
+    <!-- libraries -->
+    </script> <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+
+    <script src="app1.js" charset="utf-8"></script>
+
+  </body>
+</html>

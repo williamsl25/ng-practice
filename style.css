@@ -1,0 +1,76 @@
+html, body, input, select, textarea{
+  font-size: 1.05em !important;
+}
+p {
+  margin: 2em;
+}
+.floatContainer{
+        width: 400px;
+        height: 200px;
+        border: 2px solid purple;
+   }
+   .box{
+        float: left;
+        width: 150px;
+        height: 30px;
+        border: 2px solid gray;
+        margin: 5px;
+   }
+   .clearLeft{
+         clear: left;
+      }
+.inline{
+  background-color: #FFFF00;
+}
+.container1 {
+  border: solid black 1px;
+}
+.div1 {
+  position: relative;
+  top: 20px;
+  right: -60px;
+  background-color: black;
+  color: white;
+}
+.div1a {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 500px;
+  background-color: red;
+  color: white;
+}
+.div1b{
+  background-color: green;
+  color: white;
+}
+.div1c{
+  background-color: blue;
+  color: white;
+}
+.relAndAbs {
+  position:relative;
+  border: solid black 3px;
+}
+.div-1 {
+  background-color: black;
+  color: white;
+}
+.div-1a {
+  background-color: red;
+  color: white;
+}
+.div-1b{
+  background-color: green;
+  color: white;
+}
+.div-1c{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: blue;
+  color: white;
+}
+.rel-abs {
+  color: white;
+}
